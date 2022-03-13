@@ -46,7 +46,7 @@ class StudentMotionPlanner(GreedyBestFirstSearch):
         self.id = scenario.scenario_id
 
         if self.verbose > 1:
-            print("welcome to commonroad. today we want to delivery pizza in ", self.id)
+            print("Scenario: ", self.id)
         self._init_goal_lanelet()
 
         self.optimal_route = optimal_route_planned(scenario, planningProblem, 
